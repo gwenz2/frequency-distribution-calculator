@@ -1,5 +1,6 @@
 # Frequency Distribution Calculator
 ![Python GUI Version](screenshots/gui_screenshot.png)
+![Android GUI Version](screenshots/gui_screenshot2.jpg)
 
 *Frequency Distribution Calculator - Python GUI Interface*
 
