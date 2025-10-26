@@ -1,10 +1,5 @@
 # Frequency Distribution Calculator
 
-<div align="center">
-  <img src="screenshots/gui_screenshot.png" alt="Python GUI">
-  <img src="screenshots/gui_screenshot2.png" alt="Android App">
-</div>
-
 A statistical tool that generates frequency distribution tables from raw numerical data.
 
 **C++ Version** - Original console-based implementation from 1st year college  
@@ -13,6 +8,8 @@ A statistical tool that generates frequency distribution tables from raw numeric
 
 Simple input, automatic calculation of class intervals, frequencies, and cumulative statistics.
 
-
-
+<div align="center">
+  <img src="screenshots/gui_screenshot.png" alt="Python GUI">
+  <img src="screenshots/gui_screenshot2.png" alt="Android App">
+</div>
 
