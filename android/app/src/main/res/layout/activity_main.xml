@@ -207,6 +207,20 @@
                                 android:padding="8dp"
                                 android:minWidth="60dp"
                                 android:gravity="center" />
+
+                            <TextView
+                                android:text="&lt;rF%"
+                                android:textStyle="bold"
+                                android:padding="8dp"
+                                android:minWidth="60dp"
+                                android:gravity="center" />
+
+                            <TextView
+                                android:text="&gt;rF%"
+                                android:textStyle="bold"
+                                android:padding="8dp"
+                                android:minWidth="60dp"
+                                android:gravity="center" />
                         </TableRow>
                     </TableLayout>
                 </ScrollView>

@@ -123,6 +123,20 @@ class MainActivity : AppCompatActivity() {
                 cumFreqGreater -= classData.frequency
             }
 
+            // Calculate cumulative relative frequencies
+            var cumRelFreq = 0.0
+            classes.forEach { classData ->
+                cumRelFreq += classData.relFreq
+                classData.cumRelFreqLess = cumRelFreq
+            }
+
+            // Calculate greater than cumulative relative frequencies
+            var cumRelFreqGreater = 100.0
+            classes.forEach { classData ->
+                classData.cumRelFreqGreater = cumRelFreqGreater
+                cumRelFreqGreater -= classData.relFreq
+            }
+
             // Display table
             displayTable(classes)
 
@@ -160,6 +174,8 @@ class MainActivity : AppCompatActivity() {
             row.addView(createTableCell(classData.cumFreqLess.toString(), 50))
             row.addView(createTableCell(classData.cumFreqGreater.toString(), 50))
             row.addView(createTableCell(String.format("%.1f", classData.relFreq), 60))
+            row.addView(createTableCell(String.format("%.1f", classData.cumRelFreqLess), 60))
+            row.addView(createTableCell(String.format("%.1f", classData.cumRelFreqGreater), 60))
 
             resultsTable.addView(row)
         }
@@ -202,6 +218,8 @@ class MainActivity : AppCompatActivity() {
         val frequency: Int,
         var cumFreqLess: Int = 0,
         var cumFreqGreater: Int = 0,
-        var relFreq: Double = 0.0
+        var relFreq: Double = 0.0,
+        var cumRelFreqLess: Double = 0.0,
+        var cumRelFreqGreater: Double = 0.0
     )
 }
