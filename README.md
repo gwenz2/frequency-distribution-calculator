@@ -2,7 +2,7 @@
 
 <div align="center">
   <img src="screenshots/gui_screenshot.png" alt="Python GUI" width="45%">
-  <img src="screenshots/gui_screenshot2.jpg" alt="Android App" width="45%">
+  <img src="screenshots/gui_screenshot2.png" alt="Android App" width="45%">
 </div>
 
 <p align="center"><i>Left: Python GUI Interface | Right: Android Mobile App</i></p>
